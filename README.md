@@ -54,13 +54,14 @@ urlshortener
 
 2. **Configure MySQL Database**:
 
-   - Create a MySQL database named `urlshortener`.
+   - Create a MySQL database named `shorturl_db`.
    - Update the database connection details in `src/main/resources/application.properties`:
      ```properties
-     spring.datasource.url=jdbc:mysql://localhost:3306/urlshortener
-     spring.datasource.username=yourUsername
-     spring.datasource.password=yourPassword
-     spring.jpa.hibernate.ddl-auto=update
+      spring.datasource.url=jdbc:mysql://localhost:3306/shorturl_db
+      spring.datasource.username=shorturl_user
+      spring.datasource.password=your_password
+      spring.jpa.hibernate.ddl-auto=update
+      spring.jpa.show-sql=true
      ```
 
 3. **Run the Application**:
